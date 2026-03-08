@@ -1,14 +1,14 @@
-# JWT Authentication API
+# JWT Authentication API (FastAPI)
 
-A backend authentication system built using FastAPI.
+A backend authentication system built using FastAPI and JWT.
 
 ## Features
 
-- User registration
-- Password hashing using bcrypt
-- Login with JWT token generation
+- User registration API
+- Secure password hashing using bcrypt
+- Login API with JWT token generation
 - Protected API routes
-- Token verification
+- Token verification middleware
 
 ## Tech Stack
 
@@ -16,3 +16,17 @@ A backend authentication system built using FastAPI.
 - FastAPI
 - JWT (python-jose)
 - Passlib (bcrypt)
+
+## How to Run
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run server:
+
+uvicorn main:app --reload
+
+Open API docs:
+
+http://127.0.0.1:8000/docs
